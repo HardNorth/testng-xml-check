@@ -13,6 +13,10 @@ dependencies {
 }
 
 test {
-    useTestNG()
+    useTestNG(){
+        useDefaultListeners = false
+        suites 'src/test/resources/testng.xml'
+        suites 'src/test/resources/testng2.xml'
+    }
     testLogging.showStandardStreams = true
 }
