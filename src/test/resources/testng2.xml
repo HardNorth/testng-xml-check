@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Another example suite" parallel="classes" thread-count="10">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+    </listeners>
+
+    <test name="Another example test">
+        <parameter name="message" value="My great message"/>
+        <classes>
+            <class name="Test2"/>
+        </classes>
+    </test>
+</suite>
